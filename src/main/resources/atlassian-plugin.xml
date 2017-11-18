@@ -20,5 +20,14 @@
 
         <context>cint</context>
     </web-resource>
+
+    <web-section key="cint_admin_section" location="admin_plugins_menu" name="1C Configuration">
+       <label key="cint_admin_section.label"/> <!-- This element is optional and needs to add reference key-value under - application preoprites file -->
+    </web-section>
+
+    <web-item key="cint_conf_link" name="1C configuration" section="admin_plugins_menu/cint_admin_section" >
+       <label key="cint_conf_link.label"/> <!-- This element is optional and needs to add "rpt_links_link1.label" key vlaue under application properties-->
+       <link linkId="cint_conf_link">http://www.atlassian.com</link>
+    </web-item>
     
 </atlassian-plugin>

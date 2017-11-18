@@ -17,8 +17,7 @@
 *.zip
 *.tar.gz
 *.rar
-.idea/
-target/
+
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
@@ -29,6 +28,8 @@ hs_err_pid*
 .idea/**/cint.iml
 .idea/**/tasks.xml
 .idea/dictionaries
+.idea/
+target/
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
