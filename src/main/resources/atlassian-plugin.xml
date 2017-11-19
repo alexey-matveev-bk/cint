@@ -19,7 +19,6 @@
         <resource type="download" name="images/" location="/images"/>
 
         <context>cint</context>
-        <context>page</context>
     </web-resource>
 
     <web-section key="cint_admin_section" location="admin_plugins_menu" name="1C Configuration">

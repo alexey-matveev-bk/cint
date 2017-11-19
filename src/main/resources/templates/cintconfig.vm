@@ -8,26 +8,26 @@
     <div id="cintconfigdiv">
         <section class="aui-page-panel-content">
                         <h1>$i18n.getText("cint_conf.fill_form")</h1>
-                        <form class="aui" action="CintConfiguration.jspa!Save?">
+                        <form class="aui" action="CintConfiguration!save.jspa?">
                              <div class="field-group">
                                     <label for="cinturl">$i18n.getText("cint_conf.url.label")
                                         <span class="aui-icon icon-required">$i18n.getText("cint.required")</span></label>
                                     <input class="text medium-field" type="text"
-                                           id="cinturl" placeholder="http://www.my1c.ru/">
+                                           id="cinturl" placeholder="http://www.my1c.ru/" required>
                                     <div class="description">$i18n.getText("cint_conf.url.desc")</div>
                               </div>
                               <div class="field-group">
                                     <label for="cinturl">$i18n.getText("cint_conf.user_name.label")
                                         <span class="aui-icon icon-required">$i18n.getText("cint.required")</span></label>
                                     <input class="text medium-field" type="text"
-                                        id="cinturl" placeholder="$action.getText('cint_conf.user_name.placeholder')">
+                                        id="cinturl" placeholder="$action.getText('cint_conf.user_name.placeholder')" required>
                                     <div class="description">$i18n.getText("cint_conf.user_name.desc")</div>
                               </div>
                               <div class="field-group">
                                     <label for="cinturl">$i18n.getText("cint_conf.password.label")
                                         <span class="aui-icon icon-required">$i18n.getText("cint.required")</span></label>
-                                    <input class="text medium-field" type="text"
-                                        id="cinturl">
+                                    <input class="text medium-field" type="password"
+                                        id="cinturl" required>
                                     <div class="description">$i18n.getText("cint_conf.password.desc")</div>
                               </div>
                           <div class="buttons-container">
