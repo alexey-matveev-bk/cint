@@ -19,6 +19,7 @@
         <resource type="download" name="images/" location="/images"/>
 
         <context>cint</context>
+        <context>page</context>
     </web-resource>
 
     <web-section key="cint_admin_section" location="admin_plugins_menu" name="1C Configuration">
@@ -27,7 +28,15 @@
 
     <web-item key="cint_conf_link" name="1C configuration" section="admin_plugins_menu/cint_admin_section" >
        <label key="cint_conf_link.label"/> <!-- This element is optional and needs to add "rpt_links_link1.label" key vlaue under application properties-->
-       <link linkId="cint_conf_link">http://www.atlassian.com</link>
+       <link linkId="cint_conf_link">/secure/CintConfiguration.jspa?</link>
     </web-item>
+
+    <webwork1 key="cint_conf_webwork" name="1C Configuration webwork" class="java.lang.Object" roles-required="admin">
+        <actions>
+            <action name="ru.stas.jira.plugins.cint.impl.webwork.CintConfiguration" alias="CintConfiguration">
+                <view name="success">/templates/cintconfig.vm</view>
+            </action>
+        </actions>
+    </webwork1>
     
 </atlassian-plugin>
