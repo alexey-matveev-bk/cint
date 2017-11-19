@@ -22,14 +22,16 @@ public class PluginSettingsServiceImpl implements PluginSettingsService{
 
     public void setSettingValue(String setting, String value) {
         PluginSettings pluginSettings = pluginSettingsFactory.createGlobalSettings();
-
-        if (pluginSettings.get(PLUGIN_STORAGE_KEY + setting) == null){
+        if (value != null && setting != null) {
             pluginSettings.put(PLUGIN_STORAGE_KEY + setting, value);
         }
     }
 
     public String getSettingValue(String setting) {
         PluginSettings pluginSettings = pluginSettingsFactory.createGlobalSettings();
-        return pluginSettings.get(PLUGIN_STORAGE_KEY + setting).toString();
+        if (pluginSettings.get(PLUGIN_STORAGE_KEY + setting) != null) {
+            return pluginSettings.get(PLUGIN_STORAGE_KEY + setting).toString();
+        }
+        return "";
     }
 }

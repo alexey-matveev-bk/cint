@@ -1,0 +1,8 @@
+<tr>
+    <td class="fieldLabelArea">
+        $i18n.getText("cint_post.json.label")
+    </td>
+    <td nowrap>
+        <textarea class="textarea" name="jsonField" id="jsonField" >$jsonField</textarea>
+    </td>
+</tr>
